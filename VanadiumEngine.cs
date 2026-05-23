@@ -42,7 +42,6 @@ public class VanadiumEngine : IDisposable
         _guildId = guildId;
     }
     
-    // اختبار الاتصال
     public async Task<bool> TestConnectionAsync()
     {
         var guild = await _req.GetJsonAsync($"guilds/{_guildId}");
