@@ -1,4 +1,4 @@
-﻿/*
+/*
  * ============================================
  * Vanadium Nuker V12 - Discord Server Nuker
  * ============================================
@@ -24,6 +24,7 @@
  * Version: 2.0.0-ULTRA
  * ============================================
  */
+using System.Runtime.InteropServices;
 using VanadiumStrike.Core;
 using VanadiumStrike.Config;
 using System.Reflection;
@@ -32,8 +33,26 @@ namespace VanadiumStrike;
 
 class Program
 {
+    [DllImport("kernel32.dll", SetLastError = true)]
+    static extern IntPtr GetStdHandle(int nStdHandle);
+
+    [DllImport("kernel32.dll", SetLastError = true)]
+    static extern bool GetConsoleMode(IntPtr hConsoleHandle, out uint lpMode);
+
+    [DllImport("kernel32.dll", SetLastError = true)]
+    static extern bool SetConsoleMode(IntPtr hConsoleHandle, uint dwMode);
+
+    static void EnableAnsi()
+    {
+        var handle = GetStdHandle(-11);
+        GetConsoleMode(handle, out uint mode);
+        SetConsoleMode(handle, mode | 0x4); 
+    }
+
     static async Task Main(string[] args)
     {
+        EnableAnsi(); 
+
         Console.OutputEncoding = System.Text.Encoding.UTF8;
         Console.Title = "Vanadium Nuker V12";
         
@@ -58,18 +77,19 @@ class Program
         var bot = new VanadiumBot(token, guildId);
         await bot.StartAsync();
     }
-    public static void ShowAssemblyInfo()
-{
-    var assembly = Assembly.GetExecutingAssembly();
-    var version = assembly.GetName().Version;
-    var title = assembly.GetCustomAttribute<AssemblyTitleAttribute>()?.Title ?? "Vanadium Strike";
-    var company = assembly.GetCustomAttribute<AssemblyCompanyAttribute>()?.Company ?? "RussianHarvey & Tobakk";
-    var copyright = assembly.GetCustomAttribute<AssemblyCopyrightAttribute>()?.Copyright ?? "Copyright © 2026";
     
-    ConsoleHelper.PrintInfo($"{title} v{version}");
-    ConsoleHelper.PrintInfo($"{company}");
-    ConsoleHelper.PrintInfo($"{copyright}");
-}
+    public static void ShowAssemblyInfo()
+    {
+        var assembly = Assembly.GetExecutingAssembly();
+        var version = assembly.GetName().Version;
+        var title = assembly.GetCustomAttribute<AssemblyTitleAttribute>()?.Title ?? "Vanadium Strike";
+        var company = assembly.GetCustomAttribute<AssemblyCompanyAttribute>()?.Company ?? "RussianHarvey & Tobakk";
+        var copyright = assembly.GetCustomAttribute<AssemblyCopyrightAttribute>()?.Copyright ?? "Copyright © 2026";
+        
+        ConsoleHelper.PrintInfo($"{title} v{version}");
+        ConsoleHelper.PrintInfo($"{company}");
+        ConsoleHelper.PrintInfo($"{copyright}");
+    }
     
     public static void ForceClear()
     {
