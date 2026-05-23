@@ -20,7 +20,7 @@
  * 
  * ============================================
  * Discord: @russianharvey | @_ux8
- * GitHub: https://github.com/RussiannHarvey
+ * GitHub: https://github.com/Uxz7
  * Version: 2.0.0-ULTRA
  * ============================================
  */
