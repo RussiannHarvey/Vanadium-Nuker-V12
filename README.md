@@ -1,6 +1,6 @@
 # Vanadium Nuker V2
 
-![Version](https://img.shields.io/badge/version-2.0.0.33-blue)
+![Version](https://img.shields.io/badge/version-12.0.0.32-blue)
 ![C#](https://img.shields.io/badge/language-C%23-green)
 ![Platform](https://img.shields.io/badge/platform-Windows-blue)
 
