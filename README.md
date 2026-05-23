@@ -27,7 +27,7 @@ The intelligence level in this community does not exceed 1%. So fuck skidz.
 
 ---
 ## How To Downloads?!
-Go To Relace And Downliad ZIP File
+Go To releases And Downliad ZIP File
 the link : https://github.com/RussiannHarvey/Vanadium-Nuker-V12/releases/tag/files 
 
 
