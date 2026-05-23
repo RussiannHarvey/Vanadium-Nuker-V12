@@ -34,6 +34,18 @@ public static class ConsoleHelper
     private static readonly object _lock = new();
     public static bool SilentMode { get; set; }
 
+    public static void Clear()
+    {
+        try
+        {
+            Console.Clear();
+        }
+        catch
+        {
+            // ignore
+        }
+    }
+
     public static void PrintColored(string message, string color)
     {
         if (SilentMode) return;
@@ -47,7 +59,7 @@ public static class ConsoleHelper
 
     private static string FormatLog(string level, string icon, string message)
     {
-        var time = DateTime.Now.ToString("ddd /MM/yyyy HH:mm:ss");
+        var time = DateTime.Now.ToString("ddd dd/MM/yyyy HH:mm:ss");
         return $"[{level}] [{time}] {icon} {message}";
     }
 
