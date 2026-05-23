@@ -20,7 +20,7 @@
  * 
  * ============================================
  * Discord: @russianharvey | @_ux8
- * GitHub: https://github.com/N0tThunder
+ * GitHub: https://github.com/RussiannHarvey
  * Version: 2.0.0-ULTRA
  * ============================================
  */
