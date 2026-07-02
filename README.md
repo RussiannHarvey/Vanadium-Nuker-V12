@@ -19,8 +19,8 @@ The intelligence level in this community does not exceed 1%. So fuck skidz.
 
 ## Developers :
 ----
-## RussianHarvey Main Developr
-### discord Username : russianharvey
+## Shisui Main Developr
+### discord Username : shisui.rar
 
 ## Sulaiman (Tobakk) Developer
 ### discord Username : _ux8
