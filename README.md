@@ -11,7 +11,7 @@ I do not add any malware or logger – check the source file.
 ---
 
 
-## Russian Harvey's belief
+## Shisui's belief
 
 Support for this tool is discontinued due to the toxic behavior in the nuke community. Claims of stolen code are false. This tool was written entirely from scratch. Design similarities exist because Discord APIs have limited implementation patterns, not because code was copied.
 
