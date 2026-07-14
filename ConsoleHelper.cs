@@ -77,7 +77,7 @@ public static class ConsoleHelper
 {ColorConfig.Red}           \ V / (_| | | | | (_| | (_| | | |_| | | | | | |
 {ColorConfig.Red}            \_/ \__,_|_| |_|\__,_|\__,_|_|\__,_|_| |_| |_|
 {ColorConfig.Red}        ─────────────────────────────────────────────────────
-{ColorConfig.White}         {ColorConfig.Red}Made By {ColorConfig.White}Shisui & Tobakk |  {ColorConfig.Red}Fuck Skidz
+{ColorConfig.White}         {ColorConfig.Red}Made By {ColorConfig.White}RussianHarvey & Tobakk |  {ColorConfig.Red}Fuck Skidz
 {ColorConfig.Red}        ─────────────────────────────────────────────────────{ColorConfig.Reset}");
     }
 }
