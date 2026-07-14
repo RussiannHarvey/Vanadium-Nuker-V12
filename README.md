@@ -11,7 +11,7 @@ I do not add any malware or logger – check the source file.
 ---
 
 
-## Shisui's belief
+## RussianHarvey's belief
 
 Support for this tool is discontinued due to the toxic behavior in the nuke community. Claims of stolen code are false. This tool was written entirely from scratch. Design similarities exist because Discord APIs have limited implementation patterns, not because code was copied.
 
@@ -19,7 +19,7 @@ The intelligence level in this community does not exceed 1%. So fuck skidz.
 
 ## Developers :
 ----
-## Shisui Main Developr
+## Shisui \ RussianHarvey Main Developr
 ### discord Username : shisui.rar
 
 ## Sulaiman (Tobakk) Developer
